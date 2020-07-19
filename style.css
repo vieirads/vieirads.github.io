@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --light-blue  : rgba(126, 200, 232,0.95);
+  --dark-blue   : rgba(63, 93, 153, 0.6);
+  --light-purple: rgba(126, 126, 200, 0.95);
+  --dark-purple : rgba(51, 8, 103, 1.0);
+  --light-green : rgba(48,208,208,1);
+  --light-gray  : rgba(230,230,230,0.85);
+  --dark-gray   : rgba(150,150,150,0.85);
+  --darkest-gray: rgba(50,50,50);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--light-gray);
+  margin: 0;
+}
+
+body.green-blue::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    120deg,
+    var(--light-green),
+    var(--dark-blue)
+  ), 
+  url(https://wallpaperaccess.com/full/917804.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.gray-gray::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    120deg,
+    var(--light-gray),
+    var(--dark-gray)
+  ), 
+  url(https://wallpaperaccess.com/full/917804.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blue-frame {
+  background-image: radial-gradient(
+    var(--dark-blue), 
+    var(--light-blue)    
+  );
+  padding: 2rem;
+  position: absolute;
+  width: 66vw;
+  left: 22vw;
+  top: 1vw;
+  box-shadow: 
+    10px 0 15px rgba(0,0,0,0.20), 
+    10px 0 20px rgba(0,0,0,0.25);
+}
+
+.gray-frame {
+  background-image: linear-gradient(
+    135deg,
+    var(--light-gray),
+    var(--dark-gray)   
+  );
+  border-radius: 1rem;
+  padding: 0.35rem;
+  position: relative;
+  width: 75vw;
+  left: 22vw;
+  top: 1vw;
+  box-shadow: 
+    10px 0 15px rgba(0,0,0,0.20), 
+    10px 0 20px rgba(0,0,0,0.25);
+}
+
+.blue-frame-profile {
+  width: 16vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    var(--dark-blue), 
+    var(--light-blue)    
+  );
+  padding: 0.75rem;
+  border-radius: 4rem 4rem 0 0;
+  box-shadow: 
+    10px 0 15px rgba(0,0,0,0.20), 
+    10px 0 20px rgba(0,0,0,0.25);
+}
+
+.gray-frame-profile {
+  width: 16vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-gray),
+    var(--dark-gray)    
+  );
+  padding: 0.75rem;
+  border-radius: 4rem 4rem 0 0;
+  box-shadow: 
+    10px 0 15px rgba(0,0,0,0.20), 
+    10px 0 20px rgba(0,0,0,0.25);
+}
+
+p {
+  font-size: 0.65rem;
+  text-align: justify;
+  color: var(--darkest-gray);
+}
+
+@media (min-width: 800px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+h1 {
+  font-size: 1.25rem;
+  color: var(--darkest-gray)
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+a {
+  color: var(--light-gray);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 800px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+a:hover {
+  background: linear-gradient(
+    to right, 
+    var(--light-green),
+    var(--dark-blue)
+    );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.img-border {
+  width: 15.5vw;
+  height: 15.5vw;
+  background: transparent;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 0.25rem solid var(--darkest-gray);
+  border-top: 0;  
+  border-right: 0;
+  border-left: 0;
+}
+
+.round-fig {
+  display: block;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  margin: 0 auto;
+  color: var(--darkest-gray);
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.links-container {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
