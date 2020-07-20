@@ -13,50 +13,300 @@
 
 <body class="green-blue">
 <!-- Left column: little introduction and links to sections -->
-<div class="gray-frame-profile">
+<div class="darkest-gray-frame-profile">
     <div class="img-border">
         <img class="round-fig" src="figures/mysef.jpg" alt="A pic of myself =)">
     </div>
-    <p id="profile">
-        Hi, I am Denner, a physics Professor. 
+    <p class="profile">
+        Hello there, I am Denner, a physics Professor. 
         I created this page in an intent to train HTML and CSS. 
         You will also find some information about me and my work. 
         Feel free to contact me 😁
     </p>
     <!-- links section -->
     <div class="links-container">
-        <a href="#about-me">About me</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <div class="merge-fonts">
+            <a class="fa fa-id-card-o"></a>
+            <a class="profile-links" href="#about-me">About me</a>
+        </div>
+        <div class="merge-fonts">
+            <!-- <a class="fa fa-wrench"></a> -->
+            <a class="fa fa-gears"></a>
+            <a class="profile-links" href="#projects">Projects</a>
+        </div>
+        <div class="merge-fonts">
+            <a class="fa fa-file-text"></a>
+            <a class="profile-links" href="#publications">Publications</a>
+        </div>
+        <div class="merge-fonts">
+            <a class="fa fa-envelope"></a>
+            <a class="profile-links" href="#contact">Contact</a>
+        </div>
     </div>
 </div>
 <!-- about-me section -->
 <a id="about-me"></a>
-<div class="gray-frame">
-    <h1>About me</h1>
-    <p>Here I will put the text about my trajectory from my bachelor degree until today.</p>
+<div class="darkest-gray-frame">
+    <div class="merge-fonts">
+        <h1 class="fa fa-id-card-o icon light-gray"></h1>
+        <h1 class=" light-gray">About me</h1>
+    </div>
+    <p class="light-gray">
+        Welcome from wherever you are. My name is Denner Vieira. 
+        I have been studying physics since 2010. I live in Brazil, 
+        in 
+        <a class="within-p" href="https://bit.ly/3eMt9t0" target="_blank">
+            Maringá
+        </a>
+        (Paraná state), where I got my bachelor's degree (2013), 
+        my master's degree (2015), and my Ph.D. in physics (2019) 
+        at the 
+        <a class="within-p" href="http://www.uem.br/" target="_blank">
+            Universidade Estadual de Maringá (UEM)
+        </a>. 
+        During the latter, I spent six months (one of them entirely in the dark) 
+        in Finland, working directly with 
+        <a class="within-p" href="https://bit.ly/32B4Bk1" target="_blank">
+            Janne Alahuhta
+        </a>
+        at the 
+        <a class="within-p" href="https://www.oulu.fi/university/" target="_blank">
+            University of Oulu
+        </a>. 
+        Today I am an Assistant Professor at UEM and proudly part of the 
+        <a class="within-p" href="http://complex.pfi.uem.br/" target="_blank">
+            ComplexLab
+        </a>.
+    </p>
 </div>
 <br>
 <!-- projects section -->
 <a id="projects"></a>
-<div class="gray-frame">
-    <h1>Projects</h1>
-    <p>Here I will put texts and links to projects I worked or am working on.</p>
+<div class="darkest-gray-frame">
+    <div class="merge-fonts">
+        <h1 class="fa fa-gears icon light-gray"></h1>
+        <h1 class="light-gray">Projects</h1>
+    </div>
+    <p class="light-gray bar-below">
+        Here I will put texts and links to projects I worked or am working on.
+    </p>
 </div>
 <br>
 <!-- publications section -->
 <a id="publications"></a>
-<div class="gray-frame">
-    <h1>Publications</h1>
-    <p>Here I am going to put my publications, pdfs and links to their original page.</p>
+<div class="darkest-gray-frame">
+    <div class="merge-fonts">
+        <h1 class="fa fa-file-text icon light-gray"></h1>
+        <h1 class="light-gray">Publications</h1>
+    </div>
+    <p class="light-gray bar-below">
+        These are the papers I worked on during so far. 
+        I want to thank everyone that worked or is working
+        with me for their patience and great ideas.
+        I hope we continue collaborating over the years.
+    </p>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/electrical_2019.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Electrical conductivity and an approximate mean square displacement.
+            </h3>
+            <p class="light-gray">
+                R. R. Guimarães, <b>D. S. Vieira</b>, T. P. Petrucci,
+                H. Mukai, P. R. G. Fernandes, R. S. Mendes, 
+                Indian Journal of Physics 93, 1437-1443 (2019).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="https://doi.org/10.1007/s12648-019-01414-w" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/anomalous_2019.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Anomalous diffusion behavior in parliamentary presence.
+            </h3>
+            <p class="light-gray">
+                <b>Denner S. Vieira</b>, Jesus M. E. Riveros, Max Jauregui, 
+                Renio S. Mendes, Phys. Rev. E 99, 042141 (2019).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="https://doi.org/10.1103/PhysRevE.99.042141" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/robustness_2018.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Robustness of sentence length measures in written texts.
+            </h3>
+            <p class="light-gray">
+                <b>Denner S. Vieira</b>, Sergio Picoli, Renio S. Mendes,
+                Physica A 506, 749 (2018).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="https://doi.org/10.1016/j.physa.2018.04.104" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/ion_2017.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Ion Motion in Electrolytic Cells:
+                Anomalous Diffusion Evidences.
+            </h3>
+            <p class="light-gray">
+                E. K. Lenzi, R. S. Zola, H. V. Ribeiro, <b>D. S. Vieira</b>,
+                F. Ciuchi, A. Mazzulla, N. Scaramuzza, and L. R. Evangelista,
+                J. Phys. Chem. B 121, 2882–2886 (2017).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.1021/acs.jpcb.7b01097" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/asymptotic_2017.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Asymptotic behaviors of the Poisson-Nernst-Planck model,
+                generalizations and best adjust of experimental data.
+            </h3>
+            <p class="light-gray">
+                E.K. Lenzi, R.S. Zola, R. Rossato, H.V. Ribeiro,
+                <b>D.S. Vieira</b>, L.R. Evangelista, 
+                Electrochimica Acta 226, 40 (2017).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.1016/j.electacta.2016.12.075" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/surface_2016.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Surface Roughness Influence on CPE 
+                Parameters in Electrolytic Cells.
+            </h3>
+            <p class="light-gray">
+                <b>Denner S. Vieira</b>, Paulo R. G. Fernandes, 
+                Hatsumi Mukai, Rafael S. Zola, 
+                Giane Gonçalves Lenzi, Ervin K. Lenzi, 
+                Int. J. Electrochem. Sci. 11, 7775-7784 (2016).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.20964/2016.09.56" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/structural_2016.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Structural characterization of 
+                (Bi<sub>1-x</sub>Gd<sub>x</sub>)<sub>14</sub>W<sub>2</sub>O<sub>27</sub> 
+                (x = 0.00 and 0.05) synthesized via mechano-thermal
+                treatment.
+            </h3>
+            <p class="light-gray">
+                R. T. Santiago, <b>D. S. Vieira</b>, R. L. Biagio,
+                V. G. Camargo, C. F. C. Machado, M. Fabián,
+                K. L. da Silva, V. Šepelák, Integrated 
+                Ferroelectrics 174, 56-62 (2016).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.1080/10584587.2016.1190598" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/solutions_2016_2.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Solutions for a sorption process governed by a
+                fractional diffusion equation.
+            </h3>
+            <p class="light-gray">
+                E.K. Lenzi, M.A.F. dos Santos, <b>D.S. Vieira</b>, R.S. Zola, 
+                H.V. Ribeiro, Physica A 443, 32 (2016).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.1016/j.physa.2015.09.043" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+    
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/solutions_2016.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Solutions for a fractional diffusion equation: 
+                Anomalous diffusion and adsorption-desorption processes.
+            </h3>
+            <p class="light-gray">
+                E. K. Lenzi, M. A. F. dos Santos, M. K. Lenzi, <b>D. S. Vieira</b>, 
+                L. R. da Silva, Journal of King Saud University – Science (2015).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.1016/j.jksus.2015.08.003" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/solutions_2015.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Solutions for a fractional diffusion equation with radial symmetry and 
+                integro-differential boundary conditions.
+            </h3>
+            <p class="light-gray">
+                E. K. Lenzi, <b>D. S. Vieira</b>, M. K. Lenzi, G. G. Lenzi, 
+                D. P. Leitoles, Thermal Science 19, S1-S6 (2015).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.2298/TSCI150114045L" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
+    <div class="pub-wraper">
+        <img class="fig-article" src="figures/articles/temperature_2015.png"/>
+        <div class="pub-info">
+            <h3 class="light-gray">
+                Temperature dependence of refractive index and of electrical impedance
+                of grape seed (<i>Vitis vinifera</i>, <i>Vitis labrusca</i>) oils extracted by Soxhlet 
+                and mechanical pressing.
+            </h3>
+            <p class="light-gray">
+                <b>D.S. Vieira</b>, M. Menezes, G. Gonçalves, H. Mukai, E.K. Lenzi, N.C. Pereira and
+                P.R.G. Fernandes, Grasas y Aceites 66, e083 (2015).
+                <a class="within-p" href="" target="_blank">PDF</a> |
+                <a class="within-p" href="http://dx.doi.org/10.3989/gya.0954142" target="_blank">DOI</a> 
+            </p>
+        </div>  
+    </div>
+
 </div>
 <br>
 <!-- contact section -->
 <a id="contact"></a>
-<div class="gray-frame">
-    <h1>Contact</h1>
-    <p>Here I am going to put information on how people can contact me.</p>
+<div class="darkest-gray-frame">
+    <div class="merge-fonts">
+        <h1 class="fa fa-envelope icon light-gray"></h1>
+        <h1 class="light-gray">Contact</h1>
+    </div>    
+    <p class="light-gray bar-below">Here I am going to put information on how people can contact me.</p>
+    <div class="contact-icons">
+        <a class="fa fa-graduation-cap" href="https://scholar.google.com.br/citations?user=dQlVKPoAAAAJ&hl=en" target="_blank"></a>
+        <a class="fa fa-linkedin-square" href="https://br.linkedin.com/in/denner-vieira-477893190"></a>
+        <a class="fa fa-github" href="https://github.com/vieirads" target="_blank"></a>
+        <a class="fa fa-gitlab" href="https://gitlab.com/vieirads" target="_blank"></a>
+        <a class="fa fa-codepen" href="https://codepen.io/dennersvieira" target="_blank"></a>
+        <a class="fa fa-twitter" href="https://twitter.com/dennersvieira" target="_blank"></a>
+    </div>
 </div>
 </body>
 </html>
